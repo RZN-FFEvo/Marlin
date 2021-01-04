@@ -27,4 +27,19 @@
 
 #define BOARD_INFO_NAME "BTT SKR Pro V1.2"
 
+
+#define I2C_EEPROM
+#ifdef E2END
+   #undef E2END
+#endif
+#define E2END 0x7FFF // EEPROM end address AT24C256 (32kB)
+
+#ifdef NO_EEPROM_SELECTED
+  #undef NO_EEPROM_SELECTED
+#endif 
+
+#ifndef SDCARD_CONNECTION
+  #define SDCARD_CONNECTION                  LCD
+#endif
+
 #include "pins_BTT_SKR_PRO_common.h"

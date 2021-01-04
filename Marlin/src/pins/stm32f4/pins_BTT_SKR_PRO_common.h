@@ -243,9 +243,6 @@
 // Misc. Functions
 //
 
-#ifndef SDCARD_CONNECTION
-  #define SDCARD_CONNECTION                  LCD
-#endif
 
 //
 // Onboard SD card
